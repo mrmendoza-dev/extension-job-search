@@ -1,27 +1,59 @@
 #react-chrome-app {
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 999999999;
-    background-color: #fbfbfb;
-    color: black;
-    width: 300px;
-    height: 100vh;
-    border-left: 1px solid #f7f7f7;
-    box-shadow: 0 0 25px #21212156;
+
 }
 
 
 
 .App {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 1em 2em;
+    /* padding: 1em 2em; */
     font-size: 16px;
+    /* width: 300px; */
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999999999;
+    background-color: #fbfbfb;
+    color: black;
+    border-left: 1px solid #f7f7f7;
+    box-shadow: 0 0 25px #21212156;
+    transition: all 200ms;
+    
 }
 
+.App-big {
+        width: 300px;
+            transition: width 200ms;
+                padding: 1em 2em;
+
+
+}
+.App-small {
+        width: 0px;
+
+        visibility: hidden;
+            transition: width 200ms;
+
+}
+
+.collapse-btn {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #2557a7;
+    border-radius: 10px;
+}
+.collapse-btn:hover {
+      background-color: #164081;
+
+}
 
 
 .filter-btns {
