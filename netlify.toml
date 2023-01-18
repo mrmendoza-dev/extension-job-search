@@ -1,2 +1,0 @@
-[build]
-  command = "cd /react-chrome-app && npm run build"
