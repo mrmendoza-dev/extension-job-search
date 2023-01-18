@@ -14,9 +14,6 @@ globalStyles.innerHTML = `
 document.body.appendChild(rootElement);
 document.body.appendChild(globalStyles);
 
-  console.log("index");
-
-
 const root = ReactDOM.createRoot(rootElement);
 root.render(
   <React.StrictMode>
